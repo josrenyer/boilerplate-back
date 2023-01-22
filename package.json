@@ -1,0 +1,41 @@
+{
+  "name": "boilerplate-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/josrenyer/boilerplate-back#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josrenyer/boilerplate-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josrenyer/boilerplate-back/issues"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon app.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3"
+  },
+  "lint-staged": {
+    "*.(js || ts)": [
+      "prettier --write",
+      "eslint"
+    ]
+  }
+}
